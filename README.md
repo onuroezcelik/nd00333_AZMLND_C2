@@ -51,7 +51,7 @@ The following steps are performed:
        ![](images/03_task_settings_additional_configuration.png)
      
    - Limits are set as follows:
-     - max trials = 20
+     - max trials = 25
      - max concurrent trials = 5 as expected from the objectives of the project
      - max nodes = 6
      - experiment timeout = 60 mins (1 hours) as expected from the objectives of the project
@@ -64,22 +64,24 @@ The following steps are performed:
      - Test data is selected as Train-test split with 10%
        
        ![](images/03_task_settings_validate_test.png)
-       
-    2.4 Compute cluster
-       A compute cluster is needed to run the automated ml models.
-       - Standard_DS2_v2 is selected as optimal performance
-       - minimum number of nodes is set to 1 as expected from the objectives of the project
-       - maximum number of nodes is set to 6 at least for 5 concurrent runs
    
-       ![](images/04_compute_cluster_settings.png)
+   2.4 Compute cluster
+   - A compute cluster is needed to run the automated ml models.
+     - Standard_DS2_v2 is selected as optimal performance
+     - minimum number of nodes is set to 1 as expected from the objectives of the project
+     - maximum number of nodes is set to 6 at least for 5 concurrent runs
 
-    2.5 Submit the job
-    After a final review of all automl settings, the job is submitted
-    ![](images/05_automl_review.png)
+       ![](images/04_compute_cluster_settings.png)
+   
+   2.5 Submit the job
+   - After a final review of all automl settings, the job is submitted
     
-    2.5 Finding best model
-    As a result of submitted job, the best performing model is provided as VotingEnsemble shown below.
-    ![](images/06_best_model.png)
+     ![](images/05_automl_review.png)
+    
+   2.5 Finding best model
+   - As a result of submitted job, the best performing model is provided as VotingEnsemble shown below.
+
+     ![](images/06_best_model.png)
     
     The metrics of the best model is reviewed
     ![](images/06_best_model_metrics.png)
