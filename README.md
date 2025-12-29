@@ -28,35 +28,41 @@ The following steps are performed:
 
    Azure Machine Learning GUI is used to create a new automated ML run.
 
-    2.1. Basic settings
-    - Experiment name is defined at the step of "Basic Settings"
-   ![](images/01_basic_settings.png)
+   2.1. Basic settings
+   - Experiment name is defined at the step of "Basic Settings"
+     
+     ![](images/01_basic_settings.png)
 
-    2.2 Task type and data
+   2.2 Task type and data
    - Task type is selected as classification.
    - The data asset is registered by locally uploading the csv file from https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset
-   ![](images/02_task_type_n_data.png)
+     
+     ![](images/02_task_type_n_data.png)
 
    2.3 Task settings
-     The target column is selected as "deposit"
+   - The target column is selected as "deposit"
+     
      ![](images/03_task_settings.png)
 
-     Additional configuration settings is done by
+   - Additional configuration settings is done by
      - selecting "Primary metric" as "Accuracy"
      - checking "Explain best model" is enabled
+       
        ![](images/03_task_settings_additional_configuration.png)
      
-     Limits are set as follows:
+   - Limits are set as follows:
      - max trials = 20
      - max concurrent trials = 5 as expected from the objectives of the project
      - max nodes = 6
      - experiment timeout = 60 mins (1 hours) as expected from the objectives of the project
      - iteration timeout = 15 as minumum recommended duration by Azure ML studio
+       
        ![](images/03_task_settings_limits.png)
 
-     Validate and test data section are configured as explained in the related lesson
+   - Validate and test data section are configured as explained in the related lesson
      - Validation type is selected as Train-validation split with 10%
      - Test data is selected as Train-test split with 10%
+       
        ![](images/03_task_settings_validate_test.png)
        
     2.4 Compute cluster
@@ -64,6 +70,7 @@ The following steps are performed:
        - Standard_DS2_v2 is selected as optimal performance
        - minimum number of nodes is set to 1 as expected from the objectives of the project
        - maximum number of nodes is set to 6 at least for 5 concurrent runs
+   
        ![](images/04_compute_cluster_settings.png)
 
     2.5 Submit the job
