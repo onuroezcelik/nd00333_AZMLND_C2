@@ -129,17 +129,24 @@ through its REST API endpoint.
 
    To run the script, the following command is executed in **Git Bash**:
    bash swagger.sh
+   
    ![](images/5.2_running_swagger_bh.png)
 
    #### 5.3. Running serve.py file
-
+   This script creates an HTTP server to expose the current working directory. It is meant to be an easy way to expose a local swagger.json file so that a swagger-ui service can pick it up from localhost.
+   
    To run the script, the following command is executed in **Git Bash**:
    python serve.py
+   
    ![](images/5.3_running_serve.png)
 
-   #### 5.4. Swagger UI
+   #### 5.4. Exploring the Model with Swagger UI
+   After running the `swagger.sh` script, Swagger UI is accessible at: http://localhost:9000
    
    ![](images/5.4_swagger_ui.png)
+
+   To interact with the deployed model via the Swagger UI interface, http://localhost:8000/swagger.json is entered and explored.
+   
    ![](images/5.4_swagger_ui_score.png)
    
    #### 5.5. Running endpoint.py file
