@@ -31,24 +31,24 @@ The following steps are performed:
    ## 2.1 Basic settings
    - Experiment name is defined at the step of "Basic Settings"
      
-     ![](images/01_basic_settings.png)
+     ![](images/2.1_basic_settings.png)
 
    ## 2.2 Task type and data
    - Task type is selected as classification.
    - The data asset is registered by locally uploading the csv file from https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset
      
-     ![](images/02_task_type_n_data.png)
+     ![](images/2.2_task_type_n_data.png)
 
    ## 2.3 Task settings
    - The target column is selected as "deposit"
      
-     ![](images/03_task_settings.png)
+     ![](images/2.3_task_settings.png)
 
    - Additional configuration settings is done by
      - selecting "Primary metric" as "Accuracy"
      - checking "Explain best model" is enabled
        
-       ![](images/03_task_settings_additional_configuration.png)
+       ![](images/2.3_task_settings_additional_configuration.png)
      
    - Limits are set as follows:
      - max trials = 25
@@ -57,13 +57,13 @@ The following steps are performed:
      - experiment timeout = 60 mins (1 hours) as expected from the objectives of the project
      - iteration timeout = 15 as minumum recommended duration by Azure ML studio
        
-       ![](images/03_task_settings_limits.png)
+       ![](images/2.3_task_settings_limits.png)
 
    - Validate and test data section are configured as explained in the related lesson
      - Validation type is selected as Train-validation split with 10%
      - Test data is selected as Train-test split with 10%
        
-       ![](images/03_task_settings_validate_test.png)
+       ![](images/2.3_task_settings_validate_test.png)
    
    ## 2.4 Compute cluster
    - A compute cluster is needed to run the automated ml models.
@@ -71,17 +71,17 @@ The following steps are performed:
      - minimum number of nodes is set to 1 as expected from the objectives of the project
      - maximum number of nodes is set to 6 at least for 5 concurrent runs
 
-       ![](images/04_compute_cluster_settings.png)
+       ![](images/2.4_compute_cluster_settings.png)
    
    ## 2.5 Submit the job
    - After a final review of all automl settings, the job is submitted
     
-     ![](images/05_automl_review.png)
+     ![](images/2.5_automl_review.png)
     
    ## 2.6 Finding best model
    - As a result of submitted job, the best performing model is provided as VotingEnsemble shown below.
 
-     ![](images/06_best_model.png)
+     ![](images/2.6_best_model.png)
     
 # 3 Deployment of the Best Model
    - Starting a deployment as a web service
