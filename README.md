@@ -238,13 +238,27 @@ To do this, the related fields in the notebook are updated as shown below:
      RunDetails(published_pipeline_run).show()
 
 #### 6.2. RESULTS
-- After running through all cells, the pipeline is successfully created:
+- After running through all cells, the pipeline is successfully created.
 
-  ![](images/6.1_pipeline_created.png)
+  ![](images/6.2_pipeline_running.png)
+  ![](images/6.2_pipeline_running_finished.png)
+  ![](images/6.2_pipeline_created.png)
+  ![](images/6.2_pipeline_created.png)
+
+- The dataset "bankmarketing" and "automl_module" of the pipeline are shown below:
+  
+  ![](images/6.2_pipeline_created_2.png)
 
 - After running through all cells, the pipeline endpoint is successfully created:
 
-  ![](images/6.1_pipeline_created.png)
+  ![](images/6.2_pipeline_endpoint.png)
+
+- The "Published Pipeline overview" shows a REST enpoint with the status of "ACTIVE"
+  ![](images/6.2_pipeline_endpoint_2.png)
+
+- The "Scheduled run" are shown below:
+
+  ![](images/6.2_pipeline_created.png)
 
 ## Screen Recording
 Due to company policy restrictions, screen recording is not permitted in the working environment.  
