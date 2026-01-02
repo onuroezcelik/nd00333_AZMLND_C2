@@ -241,8 +241,9 @@ To do this, the related fields in the notebook are updated as shown below:
 - After running through all cells, the pipeline is successfully created.
 
   ![](images/6.2_pipeline_running.png)
+  
   ![](images/6.2_pipeline_running_finished.png)
-  ![](images/6.2_pipeline_created.png)
+  
   ![](images/6.2_pipeline_created.png)
 
 - The dataset "bankmarketing" and "automl_module" of the pipeline are shown below:
@@ -268,4 +269,5 @@ The project functionality and workflow are instead demonstrated through detailed
 and step-by-step explanations throughout this README.
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+- The accuracy of the model is 0,948, but to improve the model’s performance, several approaches could be considered such as experimenting with additional feature engineering techniques or increasing the training dataset size.
+- Deep learning is not enabled to make the job faster. It can be enabled in the next run.
